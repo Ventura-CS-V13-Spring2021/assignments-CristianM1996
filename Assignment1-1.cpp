@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-  const int rateA = 15;
-  const int rateB = 12;
-  const int rateC = 9;
+  const double rateA = 15.00;
+  const double rateB = 12.00;
+  const double rateC = 9.00;
 
   int seatA, seatB, seatC;
 
