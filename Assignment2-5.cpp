@@ -1,28 +1,24 @@
-///////look over /////////
-
-
 #include <iostream>
 using namespace std;
 
 int main()
 {
-  int num, i;
+  int n, i;
   int x, y;
   
-  cout << "Enter your range of numbers: ";
-  cin >> x >> y;
+  cout << "Enter the first number for your range: ";
+  cin >> x;
+  cout << "Enter the second number for your range: ";
+  cin >> y;
 
-  for (num = x; num <= y; num++)
+  for (n = x; n <= y; n++)
   {
-      for (i = 2; i < num ; i++)
+      for (i = 2; i <= n ; i++)
       {
-        if (num % i == 0)
+        if (n % i == 0)
         break;
       }
-      if (i == num)
-        cout << num << " is prime.\n";
-      else
-        cout << num << " is NOT prime.\n";
+      if (i == n)
+        cout << n << " is prime.\n";
   }  
-  
 }
