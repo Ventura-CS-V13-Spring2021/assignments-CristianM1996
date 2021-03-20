@@ -32,11 +32,11 @@ int main()
       cout << randN << endl;
     }
 
-    cout << "Sum " << sum << endl;
+    cout << "Sum: " << sum << endl;
     rdfile.close();
   
-    int avg;
-    avg = sum / (N + 1);
-    cout << "Average " << avg;
-    
+    double avg;
+    avg = sum / (N + 1.0);
+    cout << "Average:  " << avg << "\n";
+    cout << "Total number of integers: " << N + 1;
 }

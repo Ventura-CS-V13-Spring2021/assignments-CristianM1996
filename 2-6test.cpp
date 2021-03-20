@@ -6,37 +6,24 @@ using namespace std;
 
 int main()
 {
-  int randN;
-  int N;
-  ofstream readf;
-  readf.open("randN.txt");
-
-  cout << "Enter the amount of random number: ";
-  cin >> N;
-  readf << N << endl;
-  srand(time(0));
-  for(int i; i < N; i++)
-  {
-    randN = random() % 100;
-    readf << randN << endl;
-  }
-  readf.close();
-
-    int sum=0;
-    ifstream rdfile;
-    rdfile.open("randN.txt");
-
-    while(rdfile >> randN)
-    {
-      sum += randN;
-      cout << randN << endl;
-    }
-
-    cout << "Sum " << sum << endl;
-    rdfile.close();
   
-    int avg;
-    avg = sum / (N + 1);
-    cout << "Average " << avg;
-    
+  ifstream rdfile;
+  rdfile.open("randN.txt");
+
+
+  int min = 0, max=0, num=0, avg=0,sum=0,count=0;
+
+  
+  while (rdfile >> num)
+  {
+
+    count++;
+    sum += num;
+    avg = sum / count;
+
+    if(num < count)
+      min == num;
+
+  }
+  cout << num;
 }
