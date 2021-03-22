@@ -12,7 +12,12 @@ int main()
 
   for(i = x; i <= y; i++)
   {
-    
+    for(j = 2; j <= i; j++)
+    {
+      if(i % j == 0)
+      break;
   }
-
+  if (j == i)
+    cout << i << endl;
+  }
 }
