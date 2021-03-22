@@ -17,8 +17,8 @@ int main()
 	srand(time(0));
 	for(int i; i < N; i++)
 	{
-	randN = random() % 100;
-	readf << randN << endl;
+	  randN = random() % 100;
+	  readf << randN << endl;
 	}
 	readf.close();
 
@@ -29,16 +29,15 @@ int main()
 	// (1) 
 	// Before the loop, MIN and MAX must be initialized as 100 and 0
 	// or initialized ad the first random number.
-  int MIN;
-  int MAX;
-  int count = 0;
-  MIN = 0;
-  MAX = 100;
+  
+  
+  int MIN = 0;
+  int MAX = 100;
 	while(rdfile >> randN)
 	{
 		sum += randN;
 		cout << randN << endl;
-    count++;
+    randN++;
       if(randN > MAX)
         MAX = randN;
       else if (randN < MIN)

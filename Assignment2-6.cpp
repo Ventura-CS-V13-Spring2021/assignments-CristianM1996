@@ -29,17 +29,22 @@ int main()
 	// (1) 
 	// Before the loop, MIN and MAX must be initialized as 100 and 0
 	// or initialized ad the first random number.
-
+  int MAX = 0;
+  int MIN = 100;
 	while(rdfile >> randN)
 	{
 		sum += randN;
 		cout << randN << endl;
-
+    if(randN > MAX)
+      MAX = randN;
+    else if (randN < MIN)
+      MIN = randN;
 		// (2) Here you can add the code to find MIN and MAX
 		// You can use the same code that we already used in other examples
 		
 	}
-
+  cout << "MAX: " << MAX << endl;
+  cout << "MIN: " << MIN << endl;
 	cout << "Sum: " << sum << endl;
 	rdfile.close();
 
