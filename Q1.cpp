@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+int num = 0;
 int MAX = 0;
 int MIN = 99;
 int main()
@@ -14,7 +15,10 @@ int main()
 			MAX = randN;
 		else if (randN < MIN)
 		  MIN = randN;
-	  //cout << randN << endl;
+    else if(num < MAX && num > MIN)
+      num = randN;
+    cout << randN << endl;
   }
-  cout << "Number 1: " << MAX << endl;
+  cout << "Number 1: " << num << endl;
+  cout << "Number 2: " << MAX << endl;
 }
