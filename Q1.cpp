@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-
+int MAX = 0;
+int MIN = 99;
 int main()
 {
   srand(time(0));
@@ -9,6 +10,11 @@ int main()
   for(int i = 0; i < 5; i++)
 	{
 	  randN = random() % 99;
-	  cout << randN << endl;
-	}
+    if(randN > MAX)
+			MAX = randN;
+		else if (randN < MIN)
+		  MIN = randN;
+	  //cout << randN << endl;
+  }
+  cout << "Number 1: " << MAX << endl;
 }
