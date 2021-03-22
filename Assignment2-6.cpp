@@ -48,8 +48,8 @@ int main()
 	cout << "Sum: " << sum << endl;
 	rdfile.close();
 
-	double avg;
-	avg = sum / (N + 1.0);
+	int avg;
+	avg = sum / N;
 	cout << "Average:  " << avg << "\n";
-	cout << "Total number of integers: " << N + 1;
+	cout << "Total number of integers: " << N;
 }
