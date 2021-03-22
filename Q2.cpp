@@ -9,4 +9,8 @@ int main()
 
   if(num1 == num2 || num2 == num3 || num1 == num3)
     cout << "There are two integers that are equal.";
+  else if(num1 == num2 && num2 == num3)
+    cout << "All integers are equal." << num1 << num2 << num3;
+  
+
 }
