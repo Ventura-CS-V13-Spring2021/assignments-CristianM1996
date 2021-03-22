@@ -12,7 +12,7 @@ int main()
 	  randN = random() % 99;
     if(randN > MAX)
 			MAX = randN;
-    else if(randN > num)
+    else if(randN < num)
       num = randN;
     cout << randN << endl;
   }
