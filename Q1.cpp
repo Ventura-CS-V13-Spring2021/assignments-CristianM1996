@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int num = 0;
+int num;
 int MAX = 0;
 int MIN = 99;
 int main()
@@ -13,9 +13,7 @@ int main()
 	  randN = random() % 99;
     if(randN > MAX)
 			MAX = randN;
-		else if (randN < MIN)
-		  MIN = randN;
-    else if(num < MAX && num > MIN)
+    else if(randN < num && randN > num)
       num = randN;
     cout << randN << endl;
   }
