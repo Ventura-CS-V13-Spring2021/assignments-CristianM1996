@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int num = 99;
+int num = ;
 int MAX = 0;
 int main()
 {

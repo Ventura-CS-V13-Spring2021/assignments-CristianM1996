@@ -11,9 +11,9 @@ int main()
     cout << "Enter the second integer for your range: ";
     cin >> y;
     
-    for(i = x; i <= y; i++)
+    for(i = x; i < y; i++)
     {
-      for(j = 2; j <= i; j++)
+      for(j = 2; j < i; j++)
       {
         if(i % j == 0)
         break;
