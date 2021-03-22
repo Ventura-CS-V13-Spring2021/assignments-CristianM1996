@@ -13,7 +13,7 @@ int main()
 
 	cout << "Enter the amount of random number: ";
 	cin >> N;
-	//readf << N << endl;
+	readf << N << endl;
 	srand(time(0));
 	for(int i = 0; i < N; i++)
 	{
@@ -29,16 +29,20 @@ int main()
 	// (1) 
 	// Before the loop, MIN and MAX must be initialized as 100 and 0
 	// or initialized ad the first random number.
-  int MAX = 0;
-  int MIN = 100;
-	while(rdfile >> randN)
+	int MAX = 0;
+	int MIN = 100;
+	rdfile >> N ;
+	cout << "The number of line : " << N << endl;
+	// while(rdfile >> randN)
+	for(int i=0;i <N; i++)
 	{
+		rdfile >> randN; 
 		sum += randN;
 		cout << randN << endl;
-    if(randN > MAX)
-      MAX = randN;
-    else if (randN < MIN)
-      MIN = randN;
+		if(randN > MAX)
+			MAX = randN;
+		else if (randN < MIN)
+			MIN = randN;
 		// (2) Here you can add the code to find MIN and MAX
 		// You can use the same code that we already used in other examples
 		
