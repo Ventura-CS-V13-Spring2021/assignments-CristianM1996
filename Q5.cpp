@@ -10,6 +10,9 @@ int main()
   cout << "Enter the second integer for your range: ";
   cin >> y;
 
-  
+  for(i = x; i <= y; i++)
+  {
+    
+  }
 
 }
