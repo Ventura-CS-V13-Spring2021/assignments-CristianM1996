@@ -6,6 +6,7 @@ int main()
 {
   ifstream rdfile;
   int empID, numEmp;
+  rdfile >> numEmp;
   string empN, deptN;
   double sal, avg, sum;
   rdfile.open("employee.txt");
