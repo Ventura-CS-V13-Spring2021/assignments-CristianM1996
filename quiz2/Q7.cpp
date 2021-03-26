@@ -18,7 +18,10 @@ int main()
     cout << "Employee ID: ";
       cin >> empID;
     cout << "Employee Name: ";
+      cin >> empN;
     cout << "Department Name: ";
+      cin >> deptN;
     cout << "Salary: ";
+      cin >> sal;
   }
 }
