@@ -12,7 +12,8 @@ int main()
 	  randN = random() % 99;
     num = random() % 99;
     cout << randN << endl;
-  }
+  
     if(num > randN)
-    cout << num << ", " << randN << endl;
+    cout << num << " > " << randN << endl;
+  }
 }
