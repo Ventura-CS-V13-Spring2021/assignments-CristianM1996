@@ -13,14 +13,14 @@ int main()
   
   while(rdfile >> empID >> empN >> deptN >> sal)
   {  
-    cout << "Employee ID: " << empID;
-    cout << "\nSalary: " << sal;
-    cout << "\nDepartment Number: " << deptN;
-    cout << "\nEmployee Number: " << empN;
+    cout << "Employee ID: " << empID << endl;
+    cout << "Salary: " << sal << endl;
+    cout << "Department Number: " << deptN << endl;
+    cout << "Employee Number: " << empN << endl;
     sum = sum + sal;
   }
   rdfile.close();
   avg = sum/ numEmp;
-  cout << "\nTotal: " << sum << "  Average: " << avg << endl;
+  cout << "Total: " << sum << "  Average: " << avg << endl;
   return 0;
 }
