@@ -10,9 +10,10 @@ int main()
   double sal, avg, sum;
   rdfile.open("employee.txt");
   sum = 0;
-
+  
   while(rdfile >> empID >> sal >> deptN >> empN)
   {
+    
     cout << "Employee ID: " << empID;
     cout << "Salary: " << sal;
     cout << "Department Number: " << deptN;
