@@ -11,16 +11,16 @@ int main()
   rdfile.open("employee.txt");
   sum = 0;
   
-  while(rdfile >> empID >> sal >> deptN >> empN)
-  {
-    
+  while(rdfile >> empID >> empN >> deptN >> sal)
+  {  
     cout << "Employee ID: " << empID;
-    cout << "Salary: " << sal;
-    cout << "Department Number: " << deptN;
-    cout << "Employee Number: " << empN;
+    cout << "\nSalary: " << sal;
+    cout << "\nDepartment Number: " << deptN;
+    cout << "\nEmployee Number: " << empN;
     sum = sum + sal;
   }
-    rdfile.close();
-    avg = sum/numEmp;
-    cout << "Total: " << sum << "  Average: " << avg << endl;
+  rdfile.close();
+  avg = sum/ numEmp;
+  cout << "\nTotal: " << sum << "  Average: " << avg << endl;
+  return 0;
 }
