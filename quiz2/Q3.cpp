@@ -8,7 +8,7 @@ int main()
   do{
   cout << "Enter three integer values from 0 to 99: " ;
   cin >> num1 >> num2 >> num3;
-  }while((num1 < 0 || num1 > 99) && (num2 < 0 || num2 > 99) && (num3 < 0 || num3 > 99) || (num1 < 0 || num1 > 99) || (num2 < 0 || num2 > 99) || (num3 < 0 || num3 > 99));
+  }while(((num1 < 0 || num1 > 99) && (num2 < 0 || num2 > 99) && (num3 < 0 || num3 > 99)) || ((num1 < 0 || num1 > 99) || (num2 < 0 || num2 > 99) || (num3 < 0 || num3 > 99)));
 
   if (num1 != num2 && num2 != num3 && num1 != num3)  
         cout << "There are no duplicate numbers." << endl;    
