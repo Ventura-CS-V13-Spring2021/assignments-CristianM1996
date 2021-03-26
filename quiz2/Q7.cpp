@@ -17,17 +17,17 @@ int main()
   for(int i = 0; i < numEmp; i++)
   {
     cout << "Employee ID: " << endl;
-      cin >> empID;
-      readf << empID << endl;
+    cin >> empID;
+    readf << empID << endl;
     cout << "Employee Name: " << endl;
-      cin >> empN;
-      readf << empN << endl;
+    cin >> empN;
+    readf << empN << endl;
     cout << "Department Name: " << endl;
-      cin >> deptN;
-      readf << deptN << endl;
+    cin >> deptN;
+    readf << deptN << endl;
     cout << "Salary: " << endl;
-      cin >> sal;
-      readf << sal << endl;
+    cin >> sal;
+    readf << sal << endl;
   }
     readf.close();
 }
