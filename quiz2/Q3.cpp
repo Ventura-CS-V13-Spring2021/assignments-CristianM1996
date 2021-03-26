@@ -4,8 +4,11 @@ using namespace std;
 int main()
 {
   int num1, num2, num3;
-  cout << "Enter three integer values between 0 and 99: " ;
+  
+  do{
+  cout << "Enter three integer values from 0 to 99: " ;
   cin >> num1 >> num2 >> num3;
+  }while((num1 < 0 || num1 > 100) && (num))
 
   if (num1 == num2 || num2 == num3 || num1 == num3)
     if (num1 == num2)
