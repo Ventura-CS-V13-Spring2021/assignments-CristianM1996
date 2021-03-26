@@ -17,11 +17,15 @@ int main()
   {
     cout << "Employee ID: ";
       cin >> empID;
+      readf << empID;
     cout << "Employee Name: ";
       cin >> empN;
+      readf << empN;
     cout << "Department Name: ";
       cin >> deptN;
+      readf << deptN;
     cout << "Salary: ";
       cin >> sal;
+      readf << sal;
   }
 }
