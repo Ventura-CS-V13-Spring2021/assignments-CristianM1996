@@ -6,11 +6,11 @@ int main()
 {
   ifstream rdfile;
   int empID, numEmp;
-  rdfile >> numEmp;
   string empN, deptN;
   double sal, avg, sum;
   rdfile.open("employee.txt");
   sum = 0;
+  rdfile >> numEmp;
   
   while(rdfile >> empID >> empN >> deptN >> sal)
   {  
