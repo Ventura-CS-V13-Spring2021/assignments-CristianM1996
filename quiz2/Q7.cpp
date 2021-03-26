@@ -13,7 +13,7 @@ int main()
 
   cout << "Number of employees: " << endl;
   cin >> numEmp;
-  
+  readf << numEmp << endl;
   for(int i = 0; i < numEmp; i++)
   {
     cout << "Employee ID: " << endl;

@@ -17,10 +17,11 @@ int main()
     cout << "Salary: " << sal << endl;
     cout << "Department Number: " << deptN << endl;
     cout << "Employee Number: " << empN << endl;
+    cout << " " << endl;
     sum = sum + sal;
   }
   rdfile.close();
-  avg = sum/ numEmp;
+  avg = sum / numEmp;
   cout << "Total: " << sum << "  Average: " << avg << endl;
   return 0;
 }
