@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int main()
@@ -8,25 +9,25 @@ int main()
   string empN, deptN;
   double sal;
   ofstream readf;
-  readf.open("employee.txt")
+  readf.open("employee.txt");
 
   cout << "Number of employees: " << endl;
   cin >> numEmp;
   
   for(int i = 0; i < numEmp; i++)
   {
-    cout << "Employee ID: ";
+    cout << "Employee ID: " << endl;
       cin >> empID;
-      readf << empID;
-    cout << "Employee Name: ";
+      readf << empID << endl;
+    cout << "Employee Name: " << endl;
       cin >> empN;
-      readf << empN;
-    cout << "Department Name: ";
+      readf << empN << endl;
+    cout << "Department Name: " << endl;
       cin >> deptN;
-      readf << deptN;
-    cout << "Salary: ";
+      readf << deptN << endl;
+    cout << "Salary: " << endl;
       cin >> sal;
-      readf << sal;
+      readf << sal << endl;
   }
     readf.close();
 }
