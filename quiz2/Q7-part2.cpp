@@ -13,7 +13,12 @@ int main()
 
   while(rdfile >> empID >> sal >> deptN >> empN)
   {
-    
+    cout << empID;
+    cout << sal;
+    cout << deptN;
+    cout << empN;
+    sum = sum + sal;
   }
-
+  rdfile.close();
+  avg = sum/numEmp;
   
