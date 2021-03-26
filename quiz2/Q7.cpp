@@ -28,4 +28,5 @@ int main()
       cin >> sal;
       readf << sal;
   }
+    readf.close();
 }
