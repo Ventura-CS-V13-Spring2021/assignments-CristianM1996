@@ -15,6 +15,10 @@ int main()
   
   for(int i = 0; i < numEmp; i++)
   {
-    
+    cout << "Employee ID: ";
+      cin >> empID;
+    cout << "Employee Name: ";
+    cout << "Department Name: ";
+    cout << "Salary: ";
   }
 }
