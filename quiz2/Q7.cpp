@@ -33,4 +33,4 @@ int main()
     readf.close();
 }
 
-//Q8-Part1: First it creates a txt file and opens that file. Then it asks the user to input the number of employees. The number of employees is then sent into the file as an integer. Next there is a for-loop that asked for the Employee ID (Integer), Employee Name (string), Department Name (string), and Salary (double), which loops based on the number of employees. Each input is sent into the employee.txt file.  
+//Q8-Part1: First it creates a txt file and opens that file. Using ofstream because the data is going out and writing to the file. Then it asks the user to input the number of employees. The number of employees (numEmp) is then sent into the file as an integer. Next there is a for-loop that asked for the Employee ID (Integer), Employee Name (string), Department Name (string), and Salary (double), which loops based on the number of employees. Each input is sent into the employee.txt file.  
