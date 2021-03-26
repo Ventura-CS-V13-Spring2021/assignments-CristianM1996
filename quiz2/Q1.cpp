@@ -7,7 +7,7 @@ int main()
   srand(time(0));
 	int randN;
   int num;
-  for(int i = 0; i < 5; i++)
+  for(int i = 0; i < 4; i++)
 	{
 	  randN = random() % 99;
     num = random() % 99;
@@ -16,3 +16,5 @@ int main()
     cout << num << " > " << randN << endl;
   }
 }
+
+//
