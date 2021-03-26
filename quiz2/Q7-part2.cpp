@@ -21,4 +21,4 @@ int main()
   }
   rdfile.close();
   avg = sum/numEmp;
-  
+  cout << "Total: " << sum << "  Average: " << avg;
