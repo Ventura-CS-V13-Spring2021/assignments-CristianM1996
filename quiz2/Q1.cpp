@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int num = ;
-int MAX = 0;
+
 int main()
 {
   srand(time(0));
 	int randN;
+  int num;
+ 
+  randN = random() % 99;
   for(int i = 0; i < 5; i++)
 	{
-	  randN = random() % 99;
-    if(randN > MAX)
-			MAX = randN;
-   // else if()
-     //num = randN;
-    //cout << randN << endl;
+	  randN = num;
+    cout << randN << endl;
+    
+    if()
   }
   //cout << "Number 1: " << num << endl;
-  cout << "Number 2: " << MAX << endl;
+  //cout << "Number 2: " << MAX << endl;
 }
