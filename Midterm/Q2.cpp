@@ -18,6 +18,7 @@ int getRandom(void){
   }
 } 
 int isGreater(int n){
+	// Use the static var. for prec.
   int prec = 0;
 
   if(prec < n){
