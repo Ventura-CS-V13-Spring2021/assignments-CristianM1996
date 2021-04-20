@@ -8,6 +8,7 @@ int main(){
   ofstream readf;
   readf.open("numbers.txt");
   readf << isGreater(prec) << endl;
+  // Need to design the function 
 }
 int getRandom(void){
   int randN, num;
