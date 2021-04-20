@@ -6,7 +6,7 @@ int main(){
   string studName;
   int numStud, score1, score2, sum, avg;
   ofstream readf;
-  readf.open("students.txt");
+  readf.open("students.txt"); 
 
   cout << "Number of students: " << endl;
   cin >> numStud;
